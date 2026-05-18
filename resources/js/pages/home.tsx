@@ -1,11 +1,11 @@
 import { Head } from '@inertiajs/react';
 import { Button } from '@/components/ui/button';
 
-export default function Welcome() {
+export default function Home() {
     return (
         <>
-            <Head title="Welcome" />
-            <Button variant="outline">Welcome</Button>
+            <Head title="Home" />
+            <Button variant="outline">Home</Button>
         </>
     );
 }
