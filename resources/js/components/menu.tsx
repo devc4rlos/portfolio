@@ -8,7 +8,7 @@ import {
 
 export default function Menu() {
     return (
-        <NavigationMenu>
+        <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
                 <NavigationMenuItem>
                     <NavigationMenuLink asChild>
