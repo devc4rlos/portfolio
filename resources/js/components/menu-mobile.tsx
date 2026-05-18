@@ -9,7 +9,8 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
- SheetDescription} from '@/components/ui/sheet';
+    SheetDescription,
+} from '@/components/ui/sheet';
 
 const menuItems = [
     {
@@ -49,10 +50,7 @@ export default function MenuMobile() {
                 <nav className="flex flex-col gap-4 px-10">
                     {menuItems.map((item) => (
                         <SheetClose asChild key={item.href}>
-                            <Link
-                                href={item.href}
-                                className="text-base"
-                            >
+                            <Link href={item.href} className="text-base">
                                 {item.label}
                             </Link>
                         </SheetClose>
