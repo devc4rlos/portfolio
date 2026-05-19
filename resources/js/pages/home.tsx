@@ -1,6 +1,7 @@
 import { Head } from '@inertiajs/react';
 import Header from '@/components/header';
 import Hero from '@/components/hero';
+import Projects from '@/components/projects';
 import { Button } from '@/components/ui/button';
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
                     </Button>
                 }
             />
+            <Projects />
         </>
     );
 }
