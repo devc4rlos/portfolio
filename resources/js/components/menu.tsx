@@ -5,28 +5,31 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
 } from '@/components/ui/navigation-menu';
+import { useActiveSection } from '@/hooks/use-active-section';
+import { navItems } from '@/lib/nav-items';
+import { cn } from '@/lib/utils';
 
 export default function Menu() {
+    const activeSection = useActiveSection();
+
     return (
         <NavigationMenu className="hidden md:flex">
             <NavigationMenuList>
-                <NavigationMenuItem>
-                    <NavigationMenuLink asChild>
-                        <Link href="/">Home</Link>
-                    </NavigationMenuLink>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                    <NavigationMenuLink asChild>
-                        <Link href="/#projects">Projetos</Link>
-                    </NavigationMenuLink>
-                </NavigationMenuItem>
-
-                <NavigationMenuItem>
-                    <NavigationMenuLink asChild>
-                        <Link href="/#about">Sobre Mim</Link>
-                    </NavigationMenuLink>
-                </NavigationMenuItem>
+                {navItems.map(({ label, href, sectionId }) => (
+                    <NavigationMenuItem key={href}>
+                        <NavigationMenuLink asChild>
+                            <Link
+                                href={href}
+                                className={cn(
+                                    activeSection === sectionId &&
+                                        'text-foreground',
+                                )}
+                            >
+                                {label}
+                            </Link>
+                        </NavigationMenuLink>
+                    </NavigationMenuItem>
+                ))}
             </NavigationMenuList>
         </NavigationMenu>
     );
