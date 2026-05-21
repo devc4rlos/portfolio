@@ -1,4 +1,10 @@
-import { FaWhatsapp, FaGithub, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import {
+    FaWhatsapp,
+    FaGithub,
+    FaLinkedin,
+    FaInstagram,
+    FaMailBulk,
+} from 'react-icons/fa';
 import TitleSection from '@/components/title-section';
 
 const contacts = [
@@ -30,6 +36,13 @@ const contacts = [
         href: 'https://instagram.com/devc4rlos',
         iconClass: 'text-pink-500',
     },
+    {
+        icon: FaMailBulk,
+        label: 'Email',
+        handle: 'dev@carlosalexandre.com.br',
+        href: 'mailto:dev@carlosalexandre.com.br',
+        iconClass: 'text-indigo-500',
+    },
 ];
 
 export default function Contact() {
@@ -40,7 +53,7 @@ export default function Contact() {
                 description="Vamos conversar sobre seu projeto?"
             />
 
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="md: grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-5">
                 {contacts.map(
                     ({ icon: Icon, label, handle, href, iconClass }) => (
                         <a
