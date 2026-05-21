@@ -4,6 +4,7 @@ import Header from '@/components/header';
 import Hero from '@/components/hero';
 import Projects from '@/components/projects';
 import { Button } from '@/components/ui/button';
+import Contact from '@/components/contact';
 
 export default function Home() {
     return (
@@ -33,6 +34,7 @@ export default function Home() {
             />
             <Projects />
             <About />
+            <Contact />
         </>
     );
 }
