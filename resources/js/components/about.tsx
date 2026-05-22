@@ -1,5 +1,6 @@
 import TitleSection from '@/components/title-section';
 import { Button } from '@/components/ui/button';
+import Container from '@/components/container';
 
 const skills = [
     'PHP',
@@ -18,7 +19,7 @@ const skills = [
 
 export default function About() {
     return (
-        <section id="about" className="container mx-auto px-4 py-20">
+        <Container id="about" hasBackgroundInterleaved>
             <TitleSection
                 title="Sobre mim"
                 description="Quem sou, o que faço e como posso ajudar seu projeto a sair do papel."
@@ -77,6 +78,6 @@ export default function About() {
                     </Button>
                 </div>
             </div>
-        </section>
+        </Container>
     );
 }

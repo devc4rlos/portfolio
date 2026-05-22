@@ -1,8 +1,9 @@
+import Container from '@/components/container';
 import TitleSection from '@/components/title-section';
 
 export default function Projects() {
     return (
-        <section id="projects" className="container mx-auto px-4 py-20">
+        <Container id="projects" hasBackgroundInterleaved>
             <TitleSection
                 title="Meus projetos"
                 description="Projetos que mostram um pouco do meu trabalho na prática"
@@ -12,6 +13,6 @@ export default function Projects() {
                     Em breve
                 </p>
             </div>
-        </section>
+        </Container>
     );
 }

@@ -6,6 +6,7 @@ import {
     FaMailBulk,
 } from 'react-icons/fa';
 import TitleSection from '@/components/title-section';
+import Container from '@/components/container';
 
 const contacts = [
     {
@@ -47,7 +48,7 @@ const contacts = [
 
 export default function Contact() {
     return (
-        <section id="contact" className="container mx-auto px-4 py-20">
+        <Container id="contact" hasBackgroundInterleaved>
             <TitleSection
                 title="Contato"
                 description="Vamos conversar sobre seu projeto?"
@@ -76,6 +77,6 @@ export default function Contact() {
                     ),
                 )}
             </div>
-        </section>
+        </Container>
     );
 }
