@@ -27,9 +27,9 @@ export default function About() {
 
             <div className="mx-auto flex max-w-4xl flex-col items-center gap-8 md:flex-row md:items-stretch">
                 <img
-                    src="/images/avatar.png"
+                    src="/images/avatar-500x500.png"
                     alt="Avatar Carlos Alexandre"
-                    className="w-sm shrink-0 self-stretch rounded-2xl object-cover shadow-lg"
+                    className="mx-auto w-sm shrink-0 self-stretch rounded-2xl object-cover shadow-lg"
                 />
 
                 <div className="flex flex-col gap-6 pb-8 text-center md:text-left">
