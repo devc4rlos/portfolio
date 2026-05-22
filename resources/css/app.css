@@ -88,3 +88,7 @@
 html {
     scroll-behavior: smooth;
 }
+
+.container-bg-interleaved:nth-child(2n) {
+    background-color: hsl(0 0% 96% / 0.3);
+}
