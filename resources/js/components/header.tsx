@@ -27,11 +27,11 @@ export default function Header() {
             className={cn(
                 'fixed top-0 z-50 w-full transition-colors duration-300',
                 hasBackground
-                    ? 'shadow-2xs bg-background/80 backdrop-blur'
+                    ? 'bg-background/80 shadow-2xs backdrop-blur'
                     : 'bg-transparent',
             )}
         >
-            <nav className="flex justify-between items-center p-4 mx-auto container">
+            <nav className="container mx-auto flex items-center justify-between p-4">
                 <Logo />
                 <Menu />
                 <MenuMobile />
