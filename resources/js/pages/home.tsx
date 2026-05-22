@@ -1,15 +1,15 @@
 import { Head } from '@inertiajs/react';
 import About from '@/components/about';
+import Contact from '@/components/contact';
+import Footer from '@/components/footer';
 import Header from '@/components/header';
 import Hero from '@/components/hero';
 import Projects from '@/components/projects';
 import { Button } from '@/components/ui/button';
-import Contact from '@/components/contact';
-import Footer from '@/components/footer';
 
 export default function Home() {
     return (
-        <>
+        <main>
             <Head title="Home" />
             <Header />
             <Hero
@@ -37,6 +37,6 @@ export default function Home() {
             <About />
             <Contact />
             <Footer />
-        </>
+        </main>
     );
 }
