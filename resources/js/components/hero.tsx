@@ -67,6 +67,9 @@ export default function Hero({
                         <img
                             src={avatarSrc}
                             alt={avatarAlt}
+                            width={448}
+                            height={448}
+                            fetchPriority="high"
                             className="h-auto w-md rounded-2xl object-cover shadow-2xl"
                         />
                     </div>

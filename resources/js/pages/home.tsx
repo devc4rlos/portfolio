@@ -46,7 +46,7 @@ export default function Home() {
                     secondary: 'Freelancer',
                 }}
                 description="Construindo aplicações web robustas e eficientes com foco no ecossistema Laravel e boas práticas de desenvolvimento."
-                avatarSrc="/images/avatar-500x500.png"
+                avatarSrc="/images/avatar-448x448.webp"
                 avatarAlt="Foto de perfil de Carlos Alexandre"
                 primaryAction={
                     <Button size="lg" asChild>

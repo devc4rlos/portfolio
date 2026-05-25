@@ -25,10 +25,13 @@ export default function About() {
                 description="Quem sou, o que faço e como posso ajudar seu projeto a sair do papel."
             />
 
-            <div className="mx-auto flex max-w-4xl flex-col items-center gap-8 md:flex-row md:items-stretch">
+            <div className="mx-auto flex max-w-4xl flex-col items-center gap-8 lg:flex-row lg:items-stretch">
                 <img
-                    src="/images/avatar-500x500.png"
+                    src="/images/avatar-380x380.webp"
                     alt="Avatar Carlos Alexandre"
+                    width={380}
+                    height={380}
+                    loading="lazy"
                     className="mx-auto w-sm shrink-0 self-stretch rounded-2xl object-cover shadow-lg"
                 />
 
