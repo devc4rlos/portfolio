@@ -35,7 +35,7 @@ export default function Home() {
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="Carlos Alexandre" />
                 <meta name="theme-color" content="#2563eb" />
-                <link rel="manifest" href="/site.webmanifest" />
+                <link rel="manifest" href="/images/favicon/site.webmanifest" />
             </Head>
             <Header />
             <Hero
