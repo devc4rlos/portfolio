@@ -39,6 +39,13 @@ export default function Home() {
                 <meta name="author" content="Carlos Alexandre" />
                 <meta name="theme-color" content="#2563eb" />
                 <link rel="manifest" href="/images/favicon/site.webmanifest" />
+                <link
+                    rel="preload"
+                    as="image"
+                    href="/images/avatar-448x448.webp"
+                    type="image/webp"
+                    fetchPriority="high"
+                />
             </Head>
 
             <Header />
