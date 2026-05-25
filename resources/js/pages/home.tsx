@@ -1,11 +1,14 @@
 import { Head } from '@inertiajs/react';
-import About from '@/components/about';
-import Contact from '@/components/contact';
-import Footer from '@/components/footer';
+import React, { Suspense } from 'react';
+
 import Header from '@/components/header';
 import Hero from '@/components/hero';
-import Projects from '@/components/projects';
 import { Button } from '@/components/ui/button';
+
+const Projects = React.lazy(() => import('@/components/projects'));
+const About = React.lazy(() => import('@/components/about'));
+const Contact = React.lazy(() => import('@/components/contact'));
+const Footer = React.lazy(() => import('@/components/footer'));
 
 export default function Home() {
     return (
@@ -36,7 +39,15 @@ export default function Home() {
                 <meta name="author" content="Carlos Alexandre" />
                 <meta name="theme-color" content="#2563eb" />
                 <link rel="manifest" href="/images/favicon/site.webmanifest" />
+                <link
+                    rel="preload"
+                    as="image"
+                    href="/images/avatar-448x448.webp"
+                    type="image/webp"
+                    fetchPriority="high"
+                />
             </Head>
+
             <Header />
             <Hero
                 greeting="Olá, eu sou Carlos Alexandre"
@@ -59,10 +70,19 @@ export default function Home() {
                     </Button>
                 }
             />
-            <Projects />
-            <About />
-            <Contact />
-            <Footer />
+
+            <Suspense
+                fallback={
+                    <div className="py-10 text-center text-gray-500">
+                        Carregando seções...
+                    </div>
+                }
+            >
+                <Projects />
+                <About />
+                <Contact />
+                <Footer />
+            </Suspense>
         </main>
     );
 }
