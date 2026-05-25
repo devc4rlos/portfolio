@@ -10,7 +10,33 @@ import { Button } from '@/components/ui/button';
 export default function Home() {
     return (
         <main>
-            <Head title="Home" />
+            <Head>
+                <title>
+                    Carlos Alexandre | Desenvolvedor PHP Full-Stack Laravel
+                </title>
+                <meta
+                    name="description"
+                    content="Desenvolvedor PHP Full-Stack especializado em Laravel, React e automações para aplicações web modernas e escaláveis."
+                />
+                <meta
+                    property="og:title"
+                    content="Carlos Alexandre | Desenvolvedor PHP Full-Stack Laravel"
+                />
+                <meta
+                    property="og:description"
+                    content="Construindo aplicações web robustas e eficientes com foco no ecossistema Laravel."
+                />
+                <meta
+                    property="og:url"
+                    content="https://carlosalexandre.com.br"
+                />
+                <meta property="og:image" content="/images/preview.png" />
+                <meta property="og:type" content="website" />
+                <meta name="robots" content="index, follow" />
+                <meta name="author" content="Carlos Alexandre" />
+                <meta name="theme-color" content="#2563eb" />
+                <link rel="manifest" href="/site.webmanifest" />
+            </Head>
             <Header />
             <Hero
                 greeting="Olá, eu sou Carlos Alexandre"
