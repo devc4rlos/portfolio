@@ -34,6 +34,8 @@ export default function Home() {
                 <meta property="og:type" content="website" />
                 <meta name="robots" content="index, follow" />
                 <meta name="author" content="Carlos Alexandre" />
+                <meta name="theme-color" content="#2563eb" />
+                <link rel="manifest" href="/site.webmanifest" />
             </Head>
             <Header />
             <Hero
